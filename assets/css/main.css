@@ -198,8 +198,9 @@ input, select, textarea {
 	}
 
 	hr {
-		border: 0;
-		border-top: solid 1px #ddd;
+		border: none;
+		background-color:rgba(241, 100, 35, 0.589);
+		height: 2px;
 	}
 
 	blockquote {
@@ -328,7 +329,7 @@ input, select, textarea {
 		.row > .col-3 {
 			width: 25%;
 		}
-
+ 
 		.row > .off-3 {
 			margin-left: 25%;
 		}
@@ -2177,6 +2178,12 @@ input, select, textarea {
 
 				#nav ul li a.active span:before {
 					color: #e27689;
+					color:rgb(241, 100, 35)
+				}
+
+				#nav ul li a:hover .icon {
+					color: #e27689;
+					color: rgb(241, 100, 35);
 				}
 
 /* Footer */
@@ -2184,7 +2191,8 @@ input, select, textarea {
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		/* background-color: #dce3e2; */
+		background-color: rgb(220, 225, 228);
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2260,11 +2268,26 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
 				background-image: url("../../images/banner.jpeg");
 			}
 
-			#main > section.two {
+			#main section:nth-child(even) {
+				background-color: rgb(220, 225, 228);
+			}
+
+			#main section:nth-child(odd) {
+				background-color: rgb(227, 230, 233);
+			}
+
+			/* section.two, section.three, section.four, section.five {
+				background-color: rgb(240, 240, 240);
+			}
+
+			section.three, section.five, section.seven {
+
+			} */
+
+			/* #main > section.two {
 				background-color: #f5fafa;
 			}
 
@@ -2274,7 +2297,7 @@ input, select, textarea {
 
 			#main > section.four {
 				background-color: #e8edec;
-			}
+			} */
 
 /* Wide */
 
@@ -2649,8 +2672,12 @@ input, select, textarea {
 	border: 2px solid rgb(93, 90, 90);
 }
 
+span.white-background {
+	background-color: rgb(248, 248, 248);
+}
+
 	/* Learning Goals */
-.learning-goals {
+.learning-goals, .left-align-p {
 		font-size: 0.9em;
 		text-align: left;
 }
@@ -2660,7 +2687,8 @@ input, select, textarea {
 }
 
 .transparent-header {
-	background-color: rgba(153, 140, 140, 0.6);
+	background-color: rgba(136, 133, 136, 0.6);
+	/* background-color: rgba(153, 140, 140, 0.6); */
 	border-radius: 20px;
 	padding: 2%;	
 }
@@ -2673,6 +2701,15 @@ input, select, textarea {
 	line-height: 140%;
 } 
 
-#main header{
+#main header {
 	color:rgb(37, 37, 37);
+}
+
+.image-label {
+	margin-bottom: 2%;
+	color:#727272; 
+	color: rgb(241, 100, 35);
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
 }
