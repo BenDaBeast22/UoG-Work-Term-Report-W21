@@ -2677,12 +2677,12 @@ span.white-background {
 }
 
 	/* Learning Goals */
-.learning-goals, .left-align-p {
+.sub-header-container, .left-align-p {
 		font-size: 0.9em;
 		text-align: left;
 }
 
-.learning-goals p {
+.sub-header-container p {
 	margin-bottom: 3%;
 }
 
