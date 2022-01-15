@@ -1760,16 +1760,23 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 		}
-
+		/* og value 48 */
 		.image.avatar48 {
-			width: 48px;
-			height: 48px;
+			width: 63px;
+			height: 68px;
+			/* width: 48px;
+			height: 48px; */
 			background: #f00;
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: 63px;
+				height: 68px;
+				border: 1px solid rgb(241, 100, 35);
+				box-shadow: 0 0 1.5px white;
+
+				/* width: 48px;
+				height: 48px; */
 			}
 
 		.image.fit {
